@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <h1>Currículo</h1>
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="morada">Morada:</label><br>
+            <input type="text" id="morada" name="morada"><br><br>
+
+            <label for="codpostal">Código Postal:</label><br>
+            <input type="text" id="codpostal" name="codpostal"><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="website">Website:</label><br>
+            <input type="url" id="website" name="website"><br><br>
+
+            <label for="github">GitHub:</label><br>
+            <input type="url" id="github" name="github"><br><br>
+
+            <label>Género:</label><br>
+            <input type="radio" id="feminino" name="genero" value="F">
+            <label for="feminino">F</label>
+            <input type="radio" id="masculino" name="genero" value="M">
+            <label for="masculino">M</label><br><br>
+
+            <label for="idioma">Idioma:</label><br>
+            <select id="idioma" name="idioma">
+                <option value="Inglês">Inglês</option>
+                <option value="Português" selected>Português</option>
+                <option value="Francês">Francês</option>
+                <option value="Espanhol">Espanhol</option>
+                <option value="Alemão">Alemão</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formação Académica</legend>
+
+            <label for="formacao1">Curso 1:</label><br>
+            <input type="text" id="formacao1" name="formacao1"><br><br>
+
+            <label for="instituicao1">Instituição 1:</label><br>
+            <input type="text" id="instituicao1" name="instituicao1"><br><br>
+
+            <label for="formacao2">Curso 2:</label><br>
+            <input type="text" id="formacao2" name="formacao2"><br><br>
+
+            <label for="instituicao2">Instituição 2:</label><br>
+            <input type="text" id="instituicao2" name="instituicao2"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiência Profissional</legend>
+
+            <label for="cargo">Cargo:</label><br>
+            <input type="text" id="cargo" name="cargo"><br><br>
+
+            <label for="empresa">Descrição:</label><br>
+            <textarea id="empresa" name="empresa" rows="4" cols="40"></textarea><br><br>
+
+            <label for="periodo">Período:</label><br>
+            <input type="text" id="periodo" name="periodo"><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

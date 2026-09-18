@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo de Evento</title>
+</head>
+<body>
+    <h1>Registo de Evento</h1>
+
+    <form>
+        <fieldset>
+            <legend>Informações do Evento</legend>
+
+            <label for="nomeEvento">Nome do evento:</label><br>
+            <input type="text" id="nomeEvento" name="nomeEvento"><br><br>
+
+            <label for="dataEvento">Data do evento:</label><br>
+            <input type="date" id="dataEvento" name="dataEvento"><br><br>
+
+            <label for="horaInicio">Hora de início:</label><br>
+            <input type="time" id="horaInicio" name="horaInicio"><br><br>
+
+            <label for="horaFim">Hora de fim:</label><br>
+            <input type="time" id="horaFim" name="horaFim"><br><br>
+
+            <label for="descricaoEvento">Descrição do evento:</label><br>
+            <textarea id="descricaoEvento" name="descricaoEvento" rows="5" cols="40"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Localização do Evento</legend>
+
+            <label for="nomeLocal">Nome do local do evento:</label><br>
+            <input type="text" id="nomeLocal" name="nomeLocal"><br><br>
+
+            <label for="morada">Morada completa:</label><br>
+            <textarea id="morada" name="morada" rows="4" cols="40"></textarea><br><br>
+
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br><br>
+
+            <label for="pais">País:</label><br>
+            <select id="pais" name="pais">
+                <option value="Portugal">Portugal</option>
+                <option value="Espanha">Espanha</option>
+                <option value="França">França</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Alemanha">Alemanha</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes do Organizador</legend>
+
+            <label for="nomeOrganizador">Nome do organizador:</label><br>
+            <input type="text" id="nomeOrganizador" name="nomeOrganizador"><br><br>
+
+            <label for="emailOrganizador">E-mail:</label><br>
+            <input type="email" id="emailOrganizador" name="emailOrganizador"><br><br>
+
+            <label for="telefoneOrganizador">Telefone:</label><br>
+            <input type="tel" id="telefoneOrganizador" name="telefoneOrganizador"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Público-Alvo</legend>
+
+            <label for="faixaEtaria">Faixa etária:</label><br>
+            <select id="faixaEtaria" name="faixaEtaria">
+                <option value="< 18 anos">< 18 anos</option>
+                <option value="18-25 anos">18-25 anos</option>
+                <option value="26-35 anos">26-35 anos</option>
+                <option value="36-50 anos">36-50 anos</option>
+                <option value="> 50 anos">> 50 anos</option>
+            </select><br><br>
+
+            <label for="numParticipantes">Número de participantes esperados:</label><br>
+            <input type="number" id="numParticipantes" name="numParticipantes" min="1">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
