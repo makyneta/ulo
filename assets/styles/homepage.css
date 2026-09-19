@@ -1,0 +1,70 @@
+  :root {
+      --bg: #0b0e14;
+      --text: #e6e9f0;
+      --muted: #6b7280;
+      --accent: #4f8cff;
+  }
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  html,
+  body {
+      height: 100%;
+  }
+
+  body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      text-align: center;
+      gap: 40px;
+  }
+
+  #brand-container {
+      color: var(--text);
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  .logo {
+      width: 100%;
+      max-width: 440px;
+      height: auto;
+  }
+
+  .course-link {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      padding: 14px 28px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      transition: border-color .2s ease, color .2s ease;
+  }
+
+  .course-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+  }
+
+  footer {
+      position: fixed;
+      bottom: 24px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.78rem;
+  }
